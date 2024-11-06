@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Class Activity 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/x-icon" href="Logo_last.png">
+
+  <style>
+    .activity {
+      width: 100%;
+      height: auto;
+      background-color: rgb(156, 225, 247);
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+      border-radius: 2px;
+    }
+
+    .activity p {
+      font-size: 50px;
+    }
+
+    #img-area {
+      width: 40%;
+    }
+
+    #content-area {
+      width: 60%;
+    }
+
+    #heading {
+      font-family: Harrington;
+      font-size: 36px;
+      font-weight: bolder;
+      color: maroon;
+    }
+   
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      padding: 12px;
+      font-size: 29px;
+    }
+    th{
+      font-size: 1.2rem;
+    }
+    td{
+      font-size: 1.2rem;
+    }
+    .modal{
+      width: 100%;
+    }
+
+    .modal-body {
+      font-size: 1.5rem;
+    }
+    .modal-dialog {
+        max-width: 900px; /* Adjust the width as needed */
+    }
+    .revision{
+      .btn {
+            background: linear-gradient(135deg, #96C9F4, #5B9BD5); /* Light blue gradient */
+            border: none;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 
+                        -5px -5px 15px rgba(255, 255, 255, 0.5);
+            color: white; /* White text for contrast */
+            font-weight: bold;
+            padding: 12px 20px; /* Added padding for a larger button */
+            font-size: 16px; /* Increased font size */
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), 
+                        -2px -2px 10px rgba(255, 255, 255, 0.7);
+            transform: translateY(-3px); /* Lift effect on hover */
+        }
+        .btn:active {
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 
+                        inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+            transform: translateY(2px); /* Pressed effect */
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <audio id="cheers">
+    <source src="cheers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="points" src="Points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+  <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+    <img src="Logo.png" width="5%" style="float:left; margin-top:25px; padding-left: 10px;" class="img-responsive">
+    <span> <img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+  </div>
+  
+  
+
+
+  <br>
+  <center>
+   <h3 id="" style="color: maroon; " >Two types of contractions:</h3> 
+
+  
+</center>
+<br>
+
+  
+<div class="container" style="font-size: 14px;">
+
+
+  
+  <div style="display: flex; justify-content: space-between; gap: 20px;">
+    <!-- First Table Section: Pronoun + Verb Contractions -->
+    <div style="flex: 1; overflow-x: auto;">
+      <p style="font-size: 1.5rem;">
+        <b>a) <u>Pronoun + Verb Contractions</u></b> <br>
+      Examples: 
+         I'm (I am), You've (You have), She'd (She had), We'll (We will)
+    </p>
+    
+      <table style="width: 100%; border-collapse: collapse; font-size: 1.3rem;">
+        <tr style="background-color: #fbe8a6;">
+          <th style="border: 1px solid #ddd; padding: 8px;">Pronoun</th>
+          <th style="border: 1px solid #ddd; padding: 8px;">Verb</th>
+          <th style="border: 1px solid #ddd; padding: 8px;">Contraction</th>
+        </tr>
+        <tr style="background-color: #ffb3b3;">
+          <td style="border: 1px solid #ddd; padding: 8px;">He</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">is</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">He’s</td>
+        </tr>
+        <tr style="background-color: #d0e8f2;">
+          <td style="border: 1px solid #ddd; padding: 8px;">She</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">is</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">She’s</td>
+        </tr>
+        <tr style="background-color: #f8d7da;">
+          <td style="border: 1px solid #ddd; padding: 8px;">It</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">is</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">It’s</td>
+        </tr>
+        <tr style="background-color: #d1f5d3;">
+          <td style="border: 1px solid #ddd; padding: 8px;">We</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">are</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">We’re</td>
+        </tr>
+        <tr style="background-color: #e6a4f7;">
+          <td style="border: 1px solid #ddd; padding: 8px;">You</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">are</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">You’re</td>
+        </tr>
+        <tr style="background-color: #a9f7ff;">
+          <td style="border: 1px solid #ddd; padding: 8px;">They</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">are</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">They’re</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Second Table Section: Contractions with "Not" -->
+    <div style="flex: 1; overflow-x: auto;">
+      <p style="font-size: 1.5rem;">
+        <b>b) <u>Contractions with "not"</u></b><br>
+       Examples: 
+        wasn't (was not),
+        don't (do not),
+        won't (will not)
+        
+    </p>
+      <table style="width: 100%; border-collapse: collapse; font-size: 1.3rem;">
+        <tr style="background-color: #fbe8a6;">
+          <th style="border: 1px solid #ddd; padding: 8px;">Verb</th>
+          <th style="border: 1px solid #ddd; padding: 8px;">Not</th>
+          <th style="border: 1px solid #ddd; padding: 8px;">Contraction</th>
+        </tr>
+        <tr style="background-color: #ffb3b3;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Is</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">not</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">Isn’t</td>
+        </tr>
+        <tr style="background-color: #d0e8f2;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Are</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">not</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">Aren’t</td>
+        </tr>
+        <tr style="background-color: #f8d7da;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Were</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">not</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">Weren’t</td>
+        </tr>
+        <tr style="background-color: #d1f5d3;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Have</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">not</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">Haven’t</td>
+        </tr>
+        <tr style="background-color: #e6a4f7;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Has</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">not</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">Hasn’t</td>
+        </tr>
+        <tr style="background-color: #a9f7ff;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Does</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">not</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">Doesn’t</td>
+        </tr>
+        <tr style="background-color: #f0e6f7;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Can</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">not</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">Can’t</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<p></p>
+<div class="container text-center mt-1">
+  <a href="fun_time.html" class="btn btn-primary mb-5 btn-lg text-center" style="height: 50px; width: 200px; font-size: 22px;">Word Meanings</a>
+</div>
+
+
+
+</body>
+
+</html>
